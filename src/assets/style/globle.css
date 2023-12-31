@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body {
+    background: #F0F4FC;
+} */
+.scroll_hide::-webkit-scrollbar {
+    width: 0px;
+}
+
+.layout {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+@layer components {
+    .top_header {
+        @apply text-white text-sm hidden lg:flex items-center justify-center gap-x-1 bg-slate-700 py-1
+    }
+
+    .header_logo {
+        @apply text-4xl text-primary font-semibold
+    }
+
+    .header_search_input {
+        @apply indent-4 w-full bg-transparent text-sm text-textColor h-full
+    }
+
+    .header_search {
+        @apply w-[450px] h-12 rounded-full relative overflow-hidden flex bg-gray-100
+    }
+
+    .header_search_btn {
+        @apply bg-primary flex items-center justify-center text-white w-20
+    }
+
+    .header_btns {
+        @apply h-10 w-10 flex justify-center items-center rounded-full relative
+    }
+
+    .text14 {
+        @apply text-sm font-medium md:text-base
+    }
+
+    .flex-between {
+        @apply flex justify-between items-center
+    }
+}
